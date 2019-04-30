@@ -204,11 +204,11 @@ function secretNumber() {
 */
 
 function timeOutCounter() {
+  function stuff(i){setTimeout(function () {
+    console.log(i);
+  }, i * 1000);}
   for (var i = 0; i <= 5; i++) {
-    let index = i
-    setTimeout(function () {
-      console.log(index);
-    }, i * 1000);
+   stuff(i)
   }
 }
 timeOutCounter();
